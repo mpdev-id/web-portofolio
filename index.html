@@ -132,7 +132,7 @@
         <div class="absolute bottom-5 right-5 z-10">
 
             <div tabindex="0"
-                class="bg-purple-950 text-primary-content focus:bg-purple-800 focus:text-secondary-content collapse collapse-arrow shadow rounded-box">
+                class="bg-purple-950 text-primary-content focus:bg-purple-800 focus:text-secondary-content collapse collapse-arrow  shadow rounded-box">
                 <div class="collapse-title">
                     <svg class="w-5" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg"
                         stroke="#dcbeeb">
@@ -163,7 +163,6 @@
                 </div>
 
                 <div class="collapse-content ">
-
                     <div class="menu rounded-box flex flex-col items-center gap-y-4">
                         <div class="tooltip tooltip-top cursor-pointer" data-tip="Notes">
                             <a>
@@ -195,7 +194,7 @@
 
                         <div class="tooltip tooltip-top cursor-pointer" data-tip="Portfolio">
                             <div class="drawer drawer-start">
-                                <input id="projects" type="checkbox" class="drawer-toggle ">
+                                <input id="projects" type="checkbox" class="drawer-toggle">
                                 <div class="drawer-content">
                                     <label for="projects" class="drawer-button">
                                         <svg class="w-5 hover:w-6 ease-in-out duration-500 " viewBox="0 0 24.00 24.00"
@@ -223,31 +222,31 @@
                                 <div class="drawer-side">
                                     <label for="projects" aria-label="close sidebar" class="drawer-overlay"></label>
                                     <div
-                                        class="bg-base-content text-base-content min-h-lvh w-[95%] py-24 container rounded-3xl ease-in-out transition-all duration-500 ">
+                                        class="bg-gradient-to-br from-[#211c4e] to-[#363655] text-base-content min-h-lvh w-[95%] py-24 container rounded-3xl ease-in-out transition-all duration-500 ">
                                         <div
-                                            class="z-10 absolute left-10 top-2 shadow-slate-700 font-semibold text-lg p-2 mx-auto text-stone-300">
+                                            class="z-10 absolute left-10 top-2 shadow-slate-700 text-lg p-2 mx-auto text-base-content">
                                             Recent Projects</div>
 
                                         <div class="flex flex-wrap gap-5 w-90 justify-center container">
                                             <div onclick="recent_project_1.showModal()"
-                                                class="card bg-base-700 w-80 shadow-xl  ease-in-out transition-all duration-500 cursor-pointer">
+                                                class="card bg-base-700 w-80 shadow-xl ease-in-out transition-all duration-500 cursor-pointer">
                                                 <figure>
                                                     <img class="w-full h-44  object-cover hover:scale-110 transition-all  ease-in-out duration-400"
                                                         src="https://picsum.photos/seed/picsum/600/600"
                                                         alt="Aplikasi Pengendali Cuaca" />
                                                 </figure>
-                                                <div class="card-body py-10">
-                                                    <div class="pb-2">
-                                                        <div class="bg-purple-500 text-neutral-content badge badge-md">
+                                                <div class="card-body py-10 rounded-b-xl">
+                                                    <div class="pb-2 flex gap-1">
+                                                        <div class="bg-purple-500 text-purple-100 badge badge-md">
                                                             Backend Laravel</div>
-                                                        <div class="bg-purple-500 text-neutral-content badge badge-md">
+                                                        <div class="bg-purple-500 text-purple-100 badge badge-md">
                                                             Rest API</div>
                                                     </div>
-                                                    <h2 class="card-title text-primary-content">
+                                                    <h2 class="card-title">
                                                         Aplikasi Pengendali Cuaca
                                                     </h2>
                                                     <p
-                                                        class="text-primary-content overflow-hidden text-ellipsis whitespace-nowrap">
+                                                        class="overflow-hidden text-ellipsis whitespace-nowrap">
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                         Eligendi modi cupiditate maxime a quia autem reiciendis
                                                         corrupti quis deserunt veniam. Corrupti, vel!
@@ -255,26 +254,26 @@
                                                 </div>
                                             </div>
 
-                                            <dialog id="recent_project_1" class="modal">
+                                            <dialog id="recent_project_1" class="modal bg-slate-900">
                                                 <div
-                                                    class="modal-box max-w-4xl max-sm:m-5 bg-gradient-to-br from-[#0d2415] to-[#463655] text-neutral-content">
+                                                    class="modal-box max-w-4xl max-sm:m-5 bg-gradient-to-br from-[#2e272e] to-[#2a2a2b] text-neutral-content">
                                                     <div class="flex flex-col sm:flex-row gap-10 items-center">
                                                         <figure>
                                                             <img src="https://picsum.photos/seed/picsum/600/400" alt=""
                                                                 srcset="" class="max-sm:w-11/12 w-full rounded-2xl">
                                                         </figure>
                                                         <div class="max-sm:w-11/12 w-1/2">
-                                                            <h2 class="card-title text-primary-content">
+                                                            <h2 class="card-title text-neutral-content">
                                                                 Aplikasi Pengendali Cuaca
                                                             </h2>
-                                                            <hr class="my-2 divide-dotted">
-                                                            <ol>
+                                                            <hr class="my-2">
+                                                            <ul class="flex flex-col items-start">
                                                                 <li> Manage Restfull API</li>
                                                                 <li> laravel for backend</li>
                                                                 <li> Package Vite</li>
                                                                 <li> Tailwind for frontend</li>
                                                                 <li> Vanta for background</li>
-                                                            </ol>
+                                                            </ul>
                                                         </div>
                                                     </div>
                                                     <div
