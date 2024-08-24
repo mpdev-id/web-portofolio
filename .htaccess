@@ -1,0 +1,11 @@
+<IfModule mod_headers.c>
+    # Cache CSS, JavaScript, dan gambar selama 1 minggu
+    <FilesMatch "\.(css|js|jpg|jpeg|png|gif|ico)$">
+        Header set Cache-Control "max-age=604800, public"
+    </FilesMatch>
+
+    # Cache HTML selama 1 jam
+    <FilesMatch "\.(html|htm)$">
+        Header set Cache-Control "max-age=3600, public"
+    </FilesMatch>
+</IfModule>

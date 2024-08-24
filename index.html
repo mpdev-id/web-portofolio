@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" style="font-family: 'Roboto', sans-serif;">
+<html style="font-family: 'Roboto', sans-serif;">
 <head>
     <title>Median Prasetya | Portfolio</title>
     <meta name="description"
@@ -49,7 +49,7 @@
     <meta name="whatsapp" content="index, follow">
     <meta name="skype" content="index, follow">
     <meta name="keywords"
-        content="median prasetya, median prasetya website, median prasetya personal web, website median prasetya, median prasetya portfolio, median prasetya web developer, web developer median prasetya, median prasetya cilegon, median prasetya indonesia, web development, web design, web programming, web developer, programmer, coding, html, css, javascript, php, python, java, c++, c#, nodejs, react, angular, vuejs, laravel, codeigniter, wordpress, joomla, drupal, magento, shopify, squarespace, wix, weebly, google, facebook, twitter, instagram, linkedin, github, stackoverflow, reddit, quora, pinterest, youtube, blogger, tumblr, flickr, 500px, behance, dribbble, deviantart">
+        content="portfolio median prasetya, median prasetya, median prasetya website, median prasetya personal web, website median prasetya, median prasetya portfolio, median prasetya web developer, web developer median prasetya, median prasetya cilegon, median prasetya indonesia, web development, web design, web programming, web developer, programmer, coding, html, css, javascript, php, python, java, c++, c#, nodejs, react, angular, vuejs, laravel, codeigniter, wordpress, joomla, drupal, magento, shopify, squarespace, wix, weebly, google, facebook, twitter, instagram, linkedin, github, stackoverflow, reddit, quora, pinterest, youtube, blogger, tumblr, flickr, 500px, behance, dribbble, deviantart, php, laravel, google.com, tailwindcss, tailwind">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- <link href="/src/output.css" rel="stylesheet"> -->
@@ -230,7 +230,7 @@
                                     <label for="projects" aria-label="close sidebar" class="drawer-overlay "></label>
                                     <div
                                         class="bg-gradient-to-br from-[#211c4e] to-[#363655] text-base-content min-h-lvh w-[95%] py-2 max-sm:py-5 container rounded-r-3xl ease-in-out transition-all duration-500 ">
-                                        <div class="shadow-slate-700 text-2xl font-semibold text-purple-100 mx-auto pb-5 -rotate-90 absolute top-1/2 -left-5 max-sm:text-sm max-sm:-left-5">
+                                        <div class="shadow-slate-700 text-2xl font-semibold text-purple-100 mx-auto pb-5 -rotate-90 absolute top-[10%] -left-10 max-sm:text-sm max-sm:-left-5 z-[101] bg-slate-900 p-4 rounded-2xl shadow-2xl shadow-slate-700">
                                             Recent Projects</div>
                                         <div
                                             class="flex flex-wrap gap-5 w-90 justify-center container-fluid h-screen overflow-y-scroll ">
@@ -626,6 +626,35 @@
             </div>
         </div>
     </div>
+    <script>
+        // kode ini digunakan untuk meng-cache file yang di definisikan di dalam array
+        // jadi jika kita ingin meng-cache file lain, kita hanya perlu menambahkan nama file yang kita inginkan di dalam array
+        const cacheFiles = [
+            'index.html',
+            '/index.html',
+            '/assets/logo.png',
+            '/assets/style.css',
+            '/assets/script.js',
+        ];
+
+        self.addEventListener('install', event => {
+            event.waitUntil(
+                caches.open('mp-cache').then(cache => {
+                    return cache.addAll(cacheFiles);
+                })
+            );
+        });
+
+        self.addEventListener('fetch', event => {
+            event.respondWith(
+                caches.match(event.request).then(response => {
+                    return response || fetch(event.request);
+                })
+            );
+        });
+    </script>
+
+    </script>
     <!-- js background -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
@@ -637,10 +666,10 @@
             gyroControls: false,
             minHeight: 200.00,
             minWidth: 200.00,
-            highlightColor: 0x#0b2447,
-            midtoneColor: 0x#19376d,
-            lowlightColor: 0x#576cbc,
-            baseColor: 0x#0b2447
+            highlightColor: '#0b2447',
+            midtoneColor: '#19376d',
+            lowlightColor: '#576cbc',
+            baseColor: '#0b2447'
         })
     </script>
 </body>
