@@ -1,0 +1,236 @@
+[
+    {
+        "id": "recent_project_1",
+        "title": "example project 1",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "image": "https://picsum.photos/seed/picsum/600/600",
+        "details": {
+            "image": "https://picsum.photos/seed/picsum/600/600",
+            "title": "example project 1",
+            "features": [
+                "Manage Restfull API",
+                "Laravel for backend",
+                "Package Vite",
+                "Tailwind for frontend",
+                "Vanta for background"
+            ]
+        },
+        "badges": ["Backend Laravel", "Rest API"]
+    },
+    {
+        "id": "recent_project_2",
+        "title": "example project 2",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "image": "https://picsum.photos/seed/picsum/600/600",
+        "details": {
+            "image": "https://picsum.photos/seed/picsum/600/600",
+            "title": "example project 2",
+            "features": [
+                "Manage Restfull API",
+                "Laravel for backend",
+                "Package Vite",
+                "Tailwind for frontend",
+                "Vanta for background"
+            ]
+        },
+        "badges": ["Backend Laravel", "Rest API"]
+    },
+    {
+        "id": "recent_project_3",
+        "title": "example project 3",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "image": "https://picsum.photos/seed/picsum/600/600",
+        "details": {
+            "image": "https://picsum.photos/seed/picsum/600/600",
+            "title": "example project 3",
+            "features": [
+                "Manage Restfull API",
+                "Laravel for backend",
+                "Package Vite",
+                "Tailwind for frontend",
+                "Vanta for background"
+            ]
+        },
+        "badges": ["Backend Laravel", "Rest API"]
+    },
+    {
+        "id": "recent_project_4",
+        "title": "example project 4",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "image": "https://picsum.photos/seed/picsum/600/600",
+        "details": {
+            "image": "https://picsum.photos/seed/picsum/600/600",
+            "title": "example project 4",
+            "features": [
+                "Manage Restfull API",
+                "Laravel for backend",
+                "Package Vite",
+                "Tailwind for frontend",
+                "Vanta for background"
+            ]
+        },
+        "badges": ["Backend Laravel", "Rest API"]
+    },
+    {
+        "id": "recent_project_5",
+        "title": "example project 5",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "image": "https://picsum.photos/seed/picsum/600/600",
+        "details": {
+            "image": "https://picsum.photos/seed/picsum/600/600",
+            "title": "example project 5",
+            "features": [
+                "Manage Restfull API",
+                "Laravel for backend",
+                "Package Vite",
+                "Tailwind for frontend",
+                "Vanta for background"
+            ]
+        },
+        "badges": ["Backend Laravel", "Rest API"]
+    },
+    {
+        "id": "recent_project_6",
+        "title": "example project 6",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "image": "https://picsum.photos/seed/picsum/600/600",
+        "details": {
+            "image": "https://picsum.photos/seed/picsum/600/600",
+            "title": "example project 6",
+            "features": [
+                "Manage Restfull API",
+                "Laravel for backend",
+                "Package Vite",
+                "Tailwind for frontend",
+                "Vanta for background"
+            ]
+        },
+        "badges": ["Backend Laravel", "Rest API"]
+    },
+    {
+        "id": "recent_project_7",
+        "title": "example project 7",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "image": "https://picsum.photos/seed/picsum/600/600",
+        "details": {
+            "image": "https://picsum.photos/seed/picsum/600/600",
+            "title": "example project 7",
+            "features": [
+                "Manage Restfull API",
+                "Laravel for backend",
+                "Package Vite",
+                "Tailwind for frontend",
+                "Vanta for background"
+            ]
+        },
+        "badges": ["Backend Laravel", "Rest API"]
+    },
+    {
+        "id": "recent_project_8",
+        "title": "example project 8",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "image": "https://picsum.photos/seed/picsum/600/600",
+        "details": {
+            "image": "https://picsum.photos/seed/picsum/600/600",
+            "title": "example project 8",
+            "features": [
+                "Manage Restfull API",
+                "Laravel for backend",
+                "Package Vite",
+                "Tailwind for frontend",
+                "Vanta for background"
+            ]
+        },
+        "badges": ["Backend Laravel", "Rest API"]
+    },
+    {
+        "id": "recent_project_9",
+        "title": "example project 9",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "image": "https://picsum.photos/seed/picsum/600/600",
+        "details": {
+            "image": "https://picsum.photos/seed/picsum/600/600",
+            "title": "example project 9",
+            "features": [
+                "Manage Restfull API",
+                "Laravel for backend",
+                "Package Vite",
+                "Tailwind for frontend",
+                "Vanta for background"
+            ]
+        },
+        "badges": ["Backend Laravel", "Rest API"]
+    },
+    {
+        "id": "recent_project_10",
+        "title": "example project 10",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "image": "https://picsum.photos/seed/picsum/600/600",
+        "details": {
+            "image": "https://picsum.photos/seed/picsum/600/600",
+            "title": "example project 10",
+            "features": [
+                "Manage Restfull API",
+                "Laravel for backend",
+                "Package Vite",
+                "Tailwind for frontend",
+                "Vanta for background"
+            ]
+        },
+        "badges": ["Backend Laravel", "Rest API"]
+    },
+    {
+        "id": "recent_project_11",
+        "title": "example project 11",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "image": "https://picsum.photos/seed/picsum/600/600",
+        "details": {
+            "image": "https://picsum.photos/seed/picsum/600/600",
+            "title": "example project 11",
+            "features": [
+                "Manage Restfull API",
+                "Laravel for backend",
+                "Package Vite",
+                "Tailwind for frontend",
+                "Vanta for background"
+            ]
+        },
+        "badges": ["Backend Laravel", "Rest API"]
+    },
+    {
+        "id": "recent_project_12",
+        "title": "example project 12",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "image": "https://picsum.photos/seed/picsum/600/600",
+        "details": {
+            "image": "https://picsum.photos/seed/picsum/600/600",
+            "title": "example project 12",
+            "features": [
+                "Manage Restfull API",
+                "Laravel for backend",
+                "Package Vite",
+                "Tailwind for frontend",
+                "Vanta for background"
+            ]
+        },
+        "badges": ["Backend Laravel", "Rest API"]
+    },
+    {
+        "id": "recent_project_13",
+        "title": "example project 13",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "image": "https://picsum.photos/seed/picsum/600/600",
+        "details": {
+            "image": "https://picsum.photos/seed/picsum/600/600",
+            "title": "example project 13",
+            "features": [
+                "Manage Restfull API",
+                "Laravel for backend",
+                "Package Vite",
+                "Tailwind for frontend",
+                "Vanta for background"
+            ]
+        },
+        "badges": ["Backend Laravel", "Rest API"]
+    }
+]
