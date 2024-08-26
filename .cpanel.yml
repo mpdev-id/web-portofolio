@@ -2,7 +2,7 @@
 ---
 deployment:
   tasks:
-    export DEPLOYPATH=/home/mpdevmyi/public_html
-    /bin/cp -R assets $DEPLOYPATH
-    /bin/cp tailwind.config.js $DEPLOYPATH
-    /bin/cp index.html $DEPLOYPATH
+    - export DEPLOYPATH=/home/mpdevmyi/public_html
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp tailwind.config.js $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
