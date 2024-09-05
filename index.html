@@ -98,7 +98,7 @@
     </style>
 </head>
 
-<body>
+<body class="transition-all duration-500 ease-in-out">
     <div id="preloader"
         class="fixed top-0 left-0 h-screen w-screen bg-gradient-to-br from-[#363655] to-[#0f0d24] z-[1000] flex justify-center items-center animate-pulse transition-all duration-500 ease-in-out">
         <span class="loading loading-infinity loading-lg"></span>
@@ -201,10 +201,10 @@
                         </g>
                     </svg>
                 </div>
-                <div class="collapse-content ">
+                <div class="collapse-content">
                     <div class="menu rounded-box flex flex-col items-center gap-y-4">
-                        <div class="cursor-pointer tooltip tooltip-top" data-tip="Notes">
-                            <a href="notes.phtml">
+                        <div>
+                            <a href="notes.html" class="cursor-pointer tooltip tooltip-top" data-tip="Notes">
                                 <svg class="w-7 hover:w-8 ease-in-out duration-500 " viewBox="0 0 25.00 25.00"
                                     fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -230,7 +230,7 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="">
+                        <div class="cursor-pointer tooltip tooltip-top" data-tip="Portfolio">
                             <div class="drawer drawer-start">
                                 <input id="projects" type="checkbox" class="drawer-toggle">
                                 <div class="drawer-content">
