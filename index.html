@@ -7,6 +7,8 @@
     <meta name="description"
         content="Hi, I'm Median Prasetya, a passionate web developer based in Cilegon, Indonesia. I'm currently learning and experienced in web development.">
     <meta name="author" content="Median Prasetya">
+    <meta name="viewport" 
+      content="width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=0"/>
     <link rel="canonical" href="https://mpdev.my.id">
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -21,7 +23,7 @@
     <meta name="msapplication-navbutton-color" content="#17153b">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> -->
     <meta property="og:title" content="Median Prasetya | Portfolio">
     <meta property="og:description"
         content="Hi, I'm Median Prasetya, a passionate web developer based in Cilegon, Indonesia. I'm currently learning and experienced in web development.">
@@ -63,10 +65,18 @@
         type="text/css" />
     <script src="https://cdn.tailwindcss.com?ver=2.10.1"></script>
     <!-- <link href="/src/output.css" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            font-family: "quicksand", sans-serif;
+            font-size: 18px !important;
+            font-style: normal;
+        }
+    /* </style>
     <style>
         :root {
             --font-family: 'Roboto', sans-serif;
-        }
+        } */
 
         .shadown-text-lg {
             text-shadow: -4px 6px 5px #4a2d6cd2;
@@ -106,7 +116,7 @@
                         <!-- <div class="text-[#dcbeeb] text-3xl font-normal shadown-text-lg" >Median Prasetya</div> -->
                         <div
                             class="bg-clip-text text-transparent bg-gradient-to-r from-[#a56ea0] to-[#84adff] font-black shadown-text-lg">
-                            Full Snack Developer</div>
+                            Web Dev</div>
                         <div class="text-[#dcbeeb] text-3xl shadown-text-lg overflow-hidden relative font-black">
                             <!-- <div class="marquee"> -->
                             <kbd>Median Prasetya</kbd>
@@ -193,8 +203,8 @@
                 </div>
                 <div class="collapse-content ">
                     <div class="menu rounded-box flex flex-col items-center gap-y-4">
-                        <div class="cursor-pointer tooltip tooltip-top " data-tip="Notes">
-                            <a>
+                        <div class="cursor-pointer tooltip tooltip-top" data-tip="Notes">
+                            <a href="notes.phtml">
                                 <svg class="w-7 hover:w-8 ease-in-out duration-500 " viewBox="0 0 25.00 25.00"
                                     fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -246,27 +256,30 @@
                                         </svg>
                                     </label>
                                 </div>
-                                <div class="drawer-side">
+                                <div class="drawer-side bg">
                                     <label for="projects" aria-label="close sidebar" class="drawer-overlay"></label>
-                                    <div class="bg-gradient-to-br from-[#211c4e] text-center to-[#363655] text-base-content min-h-lvh w-[95%] py-2 max-sm:py-5 container rounded-r-3xl ease-in-out transition-all duration-500">
-                                        <div class="relative">
-                                            <div class="shadow-slate-700 text-xl font-semibold text-purple-100 mx-auto fixed -rotate-90 max-sm:top-[12%] sm:top-[12%] -left-10 max-sm:text-sm max-sm:-left-12 z-[101] bg-slate-900 p-2 rounded-2xl shadow-2xl">
+                                    <div class="bg-gradient-to-br from-[#211c4e] to-[#363655] text-base-content min-h-lvh w-[95%] py-2 max-sm:py-5 container rounded-r-3xl ease-in-out transition-all duration-500">
+                                            <div class="shadow-slate-700 text-xl max-sm:rotate-0 max-sm:top-2 max-sm:rounded-l-none max-sm:w-44 w-fit sticky text-center -left-10 top-1/4 justify-start font-semibold text-purple-100 -rotate-90 max-sm:text-sm  z-[101] bg-slate-900 p-2 rounded-2xl shadow-2xl ease-in-out transition-all duration-500">
                                                 <kbd>Recent Projects</kbd>
                                             </div>
+                                            <!-- <div class="\">
+                                                <kbd>Recent Projects</kbd>
+                                            </div> -->
+                                    
+                                            
+                                            <div id="projects-container" class="flex flex-wrap gap-5 p-3 max-sm:w-100 w-90 max-sm:justify-center justify-end container-fluid overflow-y-scroll">
+                                            </div>
+                                            <div class="w-full text-center">
+                                                <button id="load-more" class="btn btn-sm text-[#9129c5] my-5 hover:shadow-xl hover:border-2 hover:bg-[#9129c5c9] hover:text-[#ffff] hover:border-[#9129c5]">Load </button>
+                                            </div>
                                         </div>
-
-                                        <div id="projects-container" class="flex flex-wrap gap-5 w-90 justify-center container-fluid overflow-y-scroll">
-                                        </div>
-                                        <button id="load-more" class="btn btn-[#ffffff] my-5 hover:shadow-xl hover:border-2">Load More ༼ つ ◕_◕ ༽つ</button>
-                                    </div>
                                 </div>
                                 
-                                <!-- Template untuk Dialog dengan Loading -->
                                 <template id="project-dialog-template">
                                     <dialog class="modal bg-slate-900">
                                         <div class="modal-box max-w-4xl max-sm:m-5 bg-gradient-to-br from-[#363655] to-[#0f0d24] text-neutral-content">
                                             <div id="loading-spinner" class="flex justify-center items-center h-64">
-                                                <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-violet-800"></div>
+                                                <span class="loading loading-infinity loading-lg"></span>
                                             </div>
                                 
                                             <div id="project-details" class="hidden">
@@ -366,7 +379,7 @@
     // Fungsi untuk membuat elemen proyek
     function createProjectCard(project) {
         const projectCard = document.createElement('div');
-        projectCard.classList.add('card', 'bg-gradient-to-br', 'from-[#363655]', 'to-[#0f0d24]', 'w-80', 'shadow-xl', 'ease-in-out', 'transition-all', 'duration-500', 'cursor-pointer');
+        projectCard.classList.add('card', 'bg-gradient-to-br', 'from-[#363655]', 'to-[#0f0d24]', 'max-sm:w-[90%]', 'max-lg:w-[40%]', 'w-[28%]', 'shadow-xl', 'ease-in-out', 'transition-all', 'duration-500', 'cursor-pointer');
         projectCard.setAttribute('onclick', `showProjectModal('${project.id}')`);
 
         const figure = document.createElement('figure');
@@ -384,7 +397,7 @@
         badgeContainer.classList.add('pb-2', 'flex', 'gap-1');
         project.badges.forEach(badge => {
             const badgeDiv = document.createElement('div');
-            badgeDiv.classList.add('bg-violet-800', 'text-purple-100', 'badge', 'badge-md', 'py-3');
+            badgeDiv.classList.add('bg-violet-800', 'text-purple-100', 'badge', 'badge-md', 'py-3','overflow-hidden', 'text-ellipsis', 'whitespace-nowrap');
             badgeDiv.textContent = badge;
             badgeContainer.appendChild(badgeDiv);
         });
@@ -460,17 +473,16 @@
 });
 
     </script>
-     
-     
+          
      <!-- js background -->
        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
        <script>
            VANTA.FOG({
                el: ".bg",
-               mouseControls: false,
-               touchControls: false,
-               gyroControls: false,
+               mouseControls: true,
+               touchControls: true,
+               gyroControls: true,
                minHeight: 200.00,
                minWidth: 200.00,
                highlightColor: '#0b2447',
