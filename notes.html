@@ -86,7 +86,7 @@
 					class="w-full mb-6 lg:mb-0 mx-auto relative bg-gradient-to-br from-[#363655] to-[#0f0d24]  text-center dark:bg-[#111111] px-6 rounded-[20px] mt-[180px] md:mt-[220px] lg:mt-0 ">
 					<img alt="avatar" srcset="/assets/median-prasetya.png 1x, /assets/median-prasetya.png 2x" src="/assets/median-prasetya.png"
 						width="240" height="240" decoding="async" data-nimg="1"
-						class="w-[240px] absolute left-[50%] transform -translate-x-[50%] h-[240px]  mx-auto rounded-[20px] -mt-[140px] transition-all ease-in-out"
+						class="mask-parallelogram-3 w-[240px] absolute left-[50%] transform -translate-x-[50%] h-[240px]  mx-auto rounded-[20px] -mt-[140px] transition-all ease-in-out"
 						:class="{ 'bg-[#363655]': !getRandomColor() }"
 						
 						:style="{backgroundColor: getRandomColor()}" :class="{ 'bg-[#36365500]': !getRandomColor() }"
@@ -95,9 +95,9 @@
 					<script>
 						let getRandomColor = () => {
 							let n = (Math.random() * 0xfffff * 1000000).toString(16);
-							return `w-[240px] absolute left-[50%] transform -translate-x-[50%] h-[240px] bg-gradient-to-br from-[#363655] to-[#${n.slice(0, 6)}] mx-auto rounded-[20px] -mt-[140px] transition-all ease-in-out`;
+							return `mask-parallelogram-3 w-[240px] absolute left-[50%] transform -translate-x-[50%]  h-[240px] bg-gradient-to-br from-[#363655] to-[#${n.slice(0, 6)}] mx-auto rounded-[20px] -mt-[140px] transition-all ease-in-out`;
 						}
-						setInterval(() => document.querySelector('img').className = getRandomColor(), 10000);
+						setInterval(() => document.querySelector('img').className = getRandomColor(), 6000);
 					</script>
 					<div class="pt-[100px] pb-8">
 						<h1 class="mt-6 mb-1 text-4xl font-semibold dark:text-white max-sm:text-xl">Median
